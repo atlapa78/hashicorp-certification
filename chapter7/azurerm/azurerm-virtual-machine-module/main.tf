@@ -81,7 +81,7 @@ resource "azurerm_key_vault" "key_vault" {
   tags                = var.custom_tags
   access_policy {
     tenant_id = data.azurerm_client_config.current_config.tenant_id
-    object_id = data.azurerm_client_config.current_config.object_id
+    object_id = "d223ee36-0475-4dbb-b3f0-96d8d8a65363"
     key_permissions = [
       "create",
       "get",
